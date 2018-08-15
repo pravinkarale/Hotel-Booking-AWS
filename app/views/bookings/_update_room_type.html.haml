@@ -1,0 +1,5 @@
+%br
+= f.label "Room Type *"
+
+- room_types =  @category.rooms.select("room_type").distinct(:room_type).pluck(:room_type) if @category.present?
+= f.select :room_type, options_for_select(room_types), prompt: true if room_types.present?

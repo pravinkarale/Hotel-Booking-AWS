@@ -1,0 +1,14 @@
+
+- @categories.each do |category|
+	Category: 
+	= category.name
+	%br
+	Brief:
+	= category.description
+	%br
+	Rate per night
+	= category.rate_per_night
+	%br
+	= link_to "Room Detail", new_booking_path(:category_id => category.id)
+	%br
+	%br

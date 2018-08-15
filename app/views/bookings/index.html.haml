@@ -1,0 +1,12 @@
+- @bookings.each_with_index do |booking, index|
+	%p
+		= index += 1
+		Room Type :
+		= booking.category.name
+	%p	
+		Room Description :
+		= booking.category.description
+	%p 
+		Booked on "#{booking.created_at.to_date.strftime("%d-%m-%Y")}"
+		For the date between "#{booking.from_date.strftime("%d-%m-%Y")}" and "#{booking.to_date.strftime("%d-%m-%Y")}"	
+

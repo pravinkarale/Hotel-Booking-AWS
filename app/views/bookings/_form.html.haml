@@ -1,0 +1,22 @@
+%h1.form-head New Booking
+.main-wrapper
+	.tile-air-card
+		= form_for @booking do |f|
+			.form-container			
+				.label-box  
+					= f.label "Start date *"
+				.input-box	
+					= f.text_field :from_date, :class =>"datepik", :id => "start_date" 
+				.clear
+				.label-box  
+					= f.label "End date *"
+				.input-box		
+					= f.text_field :to_date, :class => "datepik", :id => "end_date"
+				.clear	
+					= render :partial => 'update_room_type', :locals =>{:f => f}
+				= f.hidden_field :category_id, :value => session[:category_id], :id => 'category_id' #if @category.present?
+				%br
+				= f.hidden_field :user_id, :value => current_user.id if user_signed_in?
+				= f.submit "Save"
+				= link_to "Back", categories_path, :class => "button"
+				

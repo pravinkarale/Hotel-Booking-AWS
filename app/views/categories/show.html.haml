@@ -1,0 +1,18 @@
+
+/ = form_for Booking.new do |f|
+/ 	= f.label "Room Type"
+/ 	- @category.rooms.each do |r|
+/ 		= f.label :room_type, r.room_type
+/ 		= f.radio_button :room_id, r.id
+/ 	%br
+/ 	= f.label "Start date"
+/ 	= f.text_field :from_date, :class =>"datepik" 
+/ 	= f.label "End date"
+/ 	= f.text_field :to_date, :class => "datepik"
+/ 	%br	
+/ 	= f.label "Quantity"
+/ 	= f.select :quantity ,Constant::QUANTITY, prompt: true
+/ 	%br
+/ 	= f.submit "Save"
+
+/ 	
