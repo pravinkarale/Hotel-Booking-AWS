@@ -47,11 +47,17 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# production:
+#   database: Aws-demo-app_production
+#   adapter: mysql2
+#   encoding: utf8
+#   pool: 5
+#   username: root
+#   password: root
+#   socket: /var/run/mysqld/mysqld.sock
+
 production:
+  <<: *default
   database: Aws-demo-app_production
-  adapter: mysql2
-  encoding: utf8
-  pool: 5
   username: root
   password: root
-  socket: /var/run/mysqld/mysqld.sock
