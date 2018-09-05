@@ -7,7 +7,7 @@
 
 .notice {color: #4F8A10; background-color: #DFF2BF; text-align: center;}
 
-\/* Temp styles */
+/* Temp styles */
 .header, .sidebar, .content, .footer { border: 5px solid black; }
 .content, .sidebar, .footer { border-top: none; }
 .sidebar.right { border-right: none; }
