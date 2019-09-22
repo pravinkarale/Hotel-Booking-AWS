@@ -31,9 +31,9 @@ gem 'haml'
 # Use Unicorn as the app server
 gem 'unicorn'
 gem 'mysql2', '>= 0.3.13', '< 0.5'
-gem 'capistrano'
-gem 'capistrano-rails'
-gem 'capistrano-passenger'
+# gem 'capistrano'
+# gem 'capistrano-rails'
+# gem 'capistrano-passenger'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -46,7 +46,7 @@ end
 
 group :production do
 	# gem 'pg'
-	gem 'capistrano-rbenv'
+	# gem 'capistrano-rbenv'
 end
 
 group :development do
