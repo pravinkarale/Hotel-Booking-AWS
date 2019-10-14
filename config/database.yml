@@ -60,4 +60,4 @@ production:
   <<: *default
   database: Aws-demo-app_production
   username: root
-  password: root
+  password: pravin
