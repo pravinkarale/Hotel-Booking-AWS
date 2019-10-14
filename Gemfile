@@ -29,7 +29,7 @@ gem 'haml'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-gem 'unicorn'
+gem 'passenger'
 gem 'mysql2', '>= 0.3.13', '< 0.5'
 # gem 'capistrano'
 # gem 'capistrano-rails'
@@ -42,6 +42,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'capistrano-rvm'
+  gem 'pry'
 end
 
 group :production do
