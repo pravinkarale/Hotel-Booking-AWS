@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password: pravin
+  password: password123
   socket: /var/run/mysqld/mysqld.sock
 
 development:
@@ -60,4 +60,4 @@ production:
   <<: *default
   database: Aws-demo-app_production
   username: root
-  password: pravin
+  password: password123
