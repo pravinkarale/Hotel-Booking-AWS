@@ -60,6 +60,6 @@ test:
 production:
   <<: *default
   database: Aws-demo-app_production
-  username: pravin
-  password: password123
+  username: root
+  password: pravin
   adapter: mysql2
